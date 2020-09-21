@@ -19,22 +19,7 @@ class color:
 keys = Path("./api.txt")
 logo = color.HEADER
 
- 
 
-
-                                        # Author: vBerga
-                                        # Version: 1.0
-
-####################################### DISCLAIMER ########################################
-| vBerga is a tool that allows you to use Shodan.io to obtain hundreds of vulnerable      |
-| memcached servers. It then allows you to use the same servers to launch widespread      |
-| distributed denial of service attacks by forging UDP packets sourced to your victim.    |
-| Default payload includes the memcached "stats" command, 10 bytes to send, but the reply |
-| is between 1,500 bytes up to hundreds of kilobytes. Please use this tool responsibly.   |
-| I am NOT responsible for any damages caused or any crimes committed by using this tool. |
-###########################################################################################
-                                                                                      
-'''
 print(logo)
 
 if keys.is_file():
