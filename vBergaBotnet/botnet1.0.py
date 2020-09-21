@@ -22,8 +22,8 @@ logo = color.HEADER
  
 
 
-                                        Author: vBerga
-                                        Version: 1.0
+                                        # Author: vBerga
+                                        # Version: 1.0
 
 ####################################### DISCLAIMER ########################################
 | vBerga is a tool that allows you to use Shodan.io to obtain hundreds of vulnerable      |
