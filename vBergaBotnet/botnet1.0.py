@@ -1,6 +1,7 @@
 #-- coding: utf8 --
 #!/usr/bin/env python3
 import sys, os, time, shodan
+from pathlib import Path
 from scapy.all import *
 from contextlib import contextmanager, redirect_stdout
 
@@ -18,7 +19,29 @@ class color:
 keys = Path("./api.txt")
 logo = color.HEADER
 
+        ____                       
+       |  _ \                      
+ __   _| |_) | ___ _ __ __ _  __ _ 
+ \ \ / /  _ < / _ \ '__/ _` |/ _` |
+  \ V /| |_) |  __/ | | (_| | (_| |
+   \_/ |____/ \___|_|  \__, |\__,_|
+                        __/ |      
+                       |___/       
 
+
+                                        Author: vBerga
+                                        Version: 1.0
+
+####################################### DISCLAIMER ########################################
+| vBerga is a tool that allows you to use Shodan.io to obtain hundreds of vulnerable      |
+| memcached servers. It then allows you to use the same servers to launch widespread      |
+| distributed denial of service attacks by forging UDP packets sourced to your victim.    |
+| Default payload includes the memcached "stats" command, 10 bytes to send, but the reply |
+| is between 1,500 bytes up to hundreds of kilobytes. Please use this tool responsibly.   |
+| I am NOT responsible for any damages caused or any crimes committed by using this tool. |
+###########################################################################################
+                                                                                      
+'''
 print(logo)
 
 if keys.is_file():
