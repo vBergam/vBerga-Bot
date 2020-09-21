@@ -1,7 +1,7 @@
 #-- coding: utf8 --
 #!/usr/bin/env python3
 import sys, os, time, shodan
-from pathlib import Path
+from pathlib import
 from scapy.all import *
 from contextlib import contextmanager, redirect_stdout
 
